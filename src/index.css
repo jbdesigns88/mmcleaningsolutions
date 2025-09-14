@@ -7,10 +7,15 @@
 html, body, #root { height: 100%;
   font-family: 'Lato', ui-sans-serif, system-ui, Helvetica, Arial, sans-serif;
 }
+
+html > body{
+  background: #E6D6FF;
+}
 a{text-decoration: none;}
 .header {
   background: #E6D6FF; /* lavender bar from mockup */
 }
+.hamburger{display: none;}
 
 .container {
   max-width: 1120px;            /* ~7xl */
@@ -19,11 +24,12 @@ a{text-decoration: none;}
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 /* Right-side nav */
 .nav-wrap {
-  display: none;                /* hidden on small screens; show on md+ if desired */
+  display: block;                /* hidden on small screens; show on md+ if desired */
 }
 
 @media (min-width: 768px) {
@@ -45,6 +51,7 @@ a{text-decoration: none;}
   font-size: 16px;
   color: #2A2259;               /* dark purple from mockup */
   text-decoration: none;        /* you already have this global, keeping explicit */
+  text-transform: capitalize;
 }
 
 .primary-nav a:hover {
@@ -62,7 +69,7 @@ a{text-decoration: none;}
 
 .logo span:first-child{
  
-  font-family: "Rammetto One", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bolder;
   font-style: normal;
   font-size: 7em;
@@ -91,10 +98,48 @@ body {
   background: #E6D6FF;           /* same lavender as header */
   padding-block: 40px;           /* pt-10 pb-10 */
 }
+
 @media (min-width: 768px) {
   .hero { padding-block: 56px; } /* md:py-14 */
 }
 
+.top-section {
+	display: flex;
+	gap: 10em;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.top-section h1{
+  font-size: 6em;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+.top-section p {
+	font-size: 1.5em;
+	max-width: 380px;
+}
+
+ .top-section a {
+	background-color: #3B246F;
+	color: #e6d6ff;
+	padding: 15px 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	display: block;
+	text-align: center;
+	max-width: 100px;
+}
+
+top-section-left{
+  max-width: 660px;
+  margin-left: 320px;
+}
+
+.top-section-right div img{
+  border-radius: 20px;
+}
 /* Left copy */
 .hero-copy h1 {
   font-family: 'Lato', ui-sans-serif, system-ui, Helvetica, Arial, sans-serif;
@@ -134,4 +179,53 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media  (max-width:700px) {
+  .container,.primary-nav{
+    flex-direction: column;
+  }
+
+ .hamburger {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.top-section {
+
+  flex-direction: column;
+}
+
+.top-section-right div{
+  max-width: 300px;
+}
+
+.top-section p {
+	font-size: 1.5em;
+	max-width: 380px;
+	margin: 40px auto;
+}
+.top-section a{
+  margin: auto;
+}
+.hamburger span {
+	border: 3px;
+	width: 100%;
+	height: 5px;
+	background-color: rebeccapurple;
+	margin: 3px 0;
+	border-radius: 3px;
+}
+  .primary-nav.open{ opacity: 1;}
+  .primary-nav{
+    opacity: 0;
+    gap:2rem;
+  }
+  .nav-wrap{
+    margin: 20px 0;
+  }
 }

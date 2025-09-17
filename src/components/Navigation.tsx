@@ -18,7 +18,7 @@ const tabs = [
 // }
  
 const Navigation = () => {
-    const [isOpen,setIsOpen] = useState(true);
+    const [isOpen,setIsOpen] = useState(false);
   
     
     return (

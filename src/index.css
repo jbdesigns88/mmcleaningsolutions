@@ -228,9 +228,14 @@ top-section-left{
   height: 100%;
   object-fit: cover;
 }
-  #testimonial-section {
+.about-container{
+  display: flex;
+  gap: 2rem;
+}
+  #testimonial-section,#contact,#about {
 	padding: 5rem 0;
   }
+  
 #testimonail-controls{
   margin-top: 2rem;
 }
@@ -253,13 +258,25 @@ top-section-left{
   h2{
     font-size: 2em;
   }
-
+.about-container{
+  flex-direction: column;
+ 
+  text-align: center;
+}
   #testimonial-section {
 
 	max-width: 300px;
 	margin: 0 auto;
 }
-  .container,.primary-nav{
+.primary-nav {
+  display: none;
+  gap:2rem;
+}
+  .primary-nav.open{ display: flex; flex-direction: column;}
+  .nav-wrap{
+    margin: 20px 0;
+  }
+  .container{
     flex-direction: column;
   }
 
@@ -310,12 +327,5 @@ top-section-left{
 	margin: 3px 0;
 	border-radius: 3px;
 }
-  .primary-nav.open{ display: flex;}
-  .primary-nav {
-    display: none;
-    gap:2rem;
-  }
-  .nav-wrap{
-    margin: 20px 0;
-  }
+
 }

@@ -1,8 +1,11 @@
  
 import Navigation from "./components/Navigation";
 import Logo from "./components/Logo";
+import AboutSection from "./components/About";
 import Packages from "./components/Packages";
 import TestimonialCarousel from "./components/Testimonials";
+import Contact from "./components/Contact";
+
 
 // M&M Cleaning Solutions — Updated to match the mockup closely
 // Tailwind v4 + Vite plugin. Colors aligned with mockup.
@@ -33,7 +36,7 @@ export default function App() {
           </p>
           <div className="">
             <a
-              href="#contact"
+              href="mailto:mmsanitationsolutions@gmail.com"
               className=""
             >
               Get a Quote
@@ -54,12 +57,20 @@ export default function App() {
           </div>
       </section>
     </div>
-    <div id='package-section' className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#fbf0fe]">
+
+    <section id="about" className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#e6d6ff]">
+      <AboutSection/>
+    </section>
+    <section id='services' className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#fbf0fe]">
       <Packages/>
-    </div>
-        <div id='testimonial-section' className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#e6d6ff]">
+    </section>
+        <section id='testimonial-section' className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#e6d6ff]">
           <TestimonialCarousel/>
-        </div>
+        </section>
+
+        <section id='contact' className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#fbf0fe]">
+          <Contact/>
+        </section>
    
       {/* ===== FOOTER (logo + details) ===== */}
       <footer className="w-full bg-[#3B246F] text-white">

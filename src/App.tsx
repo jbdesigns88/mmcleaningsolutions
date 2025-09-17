@@ -1,4 +1,4 @@
-import { useState } from "react";
+ 
 import Navigation from "./components/Navigation";
 import Logo from "./components/Logo";
 
@@ -6,7 +6,7 @@ import Logo from "./components/Logo";
 // Tailwind v4 + Vite plugin. Colors aligned with mockup.
 
 export default function App() {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  // const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
 
   return (
     <div className="min-h-dvh w-full text-[#2a2259]">

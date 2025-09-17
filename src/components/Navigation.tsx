@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {   useState } from "react";
 
 const tabs = [
     {name:'home',slug:'#',order:1},

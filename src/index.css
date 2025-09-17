@@ -79,10 +79,35 @@ a{text-decoration: none;}
   line-height: 1.4;
 }
 
+footer .container.content-details{
+  justify-content: end;
+    color: #E6D6FF;
+}
+footer .logo{
+  font-size: 12px;
+  color: #E6D6FF;
+}
+#copyright-section{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  border: 1px solid #1D005D;
+}
+#copyright-section, #copyright-section a {
+	color: #9b8c79;
+	width: 100%;
+}
+
 @media (min-width: 768px) {
   .nav-wrap { display: block; }
 }
 
+footer section .container ul{
+  padding: 0;
+}
+footer section .container ul li{
+  justify-content: center;
+}
 .primary-nav {
   display: flex;
   align-items: center;
@@ -255,6 +280,68 @@ top-section-left{
   background-color: #3b246f;
 }
 @media  (max-width:700px) {
+  #main-navigation{
+    display: none;
+  }
+#mobile-navigation {
+	background-color: #e9defb;
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+	top: 120px;
+	position: fixed;
+	 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#mobile-navigation ul{
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#mobile-navigation ul li a{
+  font-size: 1.2em;
+  text-transform: capitalize;
+  color: #2A2259;
+  font-weight: 600;
+}
+
+#mobile-navigation ul li{
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#mobile-navigation ul li:active,#mobile-navigation ul li:hover{
+  background-color: #3B246F;
+  color: #E6D6FF;
+}
+
+
+  #nav-logo-container{
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: #3B246F;
+    position: fixed;
+    top:0;
+    margin-bottom: 50px;
+  }
+  #nav-logo-container .logo span:first-child{
+    font-size: 5em;
+    color:#E6D6FF;
+  }
+
+    #nav-logo-container .logo span:last-child{
+    font-size: 0.5em;
+    color:#E6D6FF;
+  }
   h2{
     font-size: 2em;
   }
@@ -297,7 +384,7 @@ top-section-left{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 10rem;
+  margin: 10rem 0;
 }
 
 .top-section h1{
@@ -323,7 +410,7 @@ top-section-left{
 	border: 3px;
 	width: 100%;
 	height: 5px;
-	background-color: rebeccapurple;
+	background-color: #E6D6FF;
 	margin: 3px 0;
 	border-radius: 3px;
 }

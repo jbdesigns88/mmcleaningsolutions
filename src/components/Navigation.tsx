@@ -1,4 +1,4 @@
-import {   useState } from "react";
+ 
 
 const tabs = [
     {name:'home',slug:'#',order:1},
@@ -18,22 +18,14 @@ const tabs = [
 // }
  
 const Navigation = () => {
-    const [isOpen,setIsOpen] = useState(false);
+ 
   
     
     return (
-      <nav aria-label="Primary" className="nav-wrap">
-        <button
-  className="hamburger"
-  aria-expanded={isOpen}
-  aria-controls="primary-nav"
-  onClick={() => setIsOpen((prev) => !prev)}
->
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul className={`primary-nav  ${isOpen ? 'open': ''}`}>
+      <nav id="main-navigation" aria-label="Primary" className="nav-wrap">
+ 
+      
+        <ul className={`primary-nav`}>
         {tabs.map(tab => {
             return (
             <li>

@@ -228,8 +228,37 @@ top-section-left{
   height: 100%;
   object-fit: cover;
 }
+  #testimonial-section {
+	padding: 5rem 0;
+  }
+#testimonail-controls{
+  margin-top: 2rem;
+}
+  .rounded-full {
+	border-radius: calc(infinity * 1px);
+	width: 20px;
+	height: 20px;
+	margin: 0 10px;
+	border: none;
+ 
+}
+.rounded-full.inactive {
+  background-color: #b798ef;
+}
 
+.rounded-full.active {
+  background-color: #3b246f;
+}
 @media  (max-width:700px) {
+  h2{
+    font-size: 2em;
+  }
+
+  #testimonial-section {
+
+	max-width: 300px;
+	margin: 0 auto;
+}
   .container,.primary-nav{
     flex-direction: column;
   }

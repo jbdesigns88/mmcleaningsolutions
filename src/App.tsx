@@ -2,6 +2,7 @@
 import Navigation from "./components/Navigation";
 import Logo from "./components/Logo";
 import Packages from "./components/Packages";
+import TestimonialCarousel from "./components/Testimonials";
 
 // M&M Cleaning Solutions — Updated to match the mockup closely
 // Tailwind v4 + Vite plugin. Colors aligned with mockup.
@@ -56,6 +57,9 @@ export default function App() {
     <div id='package-section' className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#fbf0fe]">
       <Packages/>
     </div>
+        <div id='testimonial-section' className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#e6d6ff]">
+          <TestimonialCarousel/>
+        </div>
    
       {/* ===== FOOTER (logo + details) ===== */}
       <footer className="w-full bg-[#3B246F] text-white">

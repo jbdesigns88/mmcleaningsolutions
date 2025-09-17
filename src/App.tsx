@@ -1,6 +1,7 @@
  
 import Navigation from "./components/Navigation";
 import Logo from "./components/Logo";
+import Packages from "./components/Packages";
 
 // M&M Cleaning Solutions — Updated to match the mockup closely
 // Tailwind v4 + Vite plugin. Colors aligned with mockup.
@@ -52,7 +53,10 @@ export default function App() {
           </div>
       </section>
     </div>
-
+    <div id='package-section' className="spacer h-20 md:h-32 lg:h-40 w-full bg-[#fbf0fe]">
+      <Packages/>
+    </div>
+   
       {/* ===== FOOTER (logo + details) ===== */}
       <footer className="w-full bg-[#3B246F] text-white">
         <section className="mx-auto max-w-7xl px-6 py-14 grid md:grid-cols-2 gap-10 items-start">

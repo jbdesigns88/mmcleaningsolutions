@@ -44,7 +44,7 @@ export default function App() {
       <section className="top-section-right">
          <div className=" ">
             <img
-              src="https://images.pexels.com/photos/4239125/pexels-photo-4239125.jpeg"
+              src="./images/smile_cleaning.png"
               alt="Smiling cleaner holding supplies"
               className="block w-full object-cover"
               loading="lazy"

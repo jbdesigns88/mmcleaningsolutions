@@ -189,7 +189,7 @@ top-section-left{
  .hamburger {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 60px;
   cursor: pointer;
   background: none;
   border: none;
@@ -198,6 +198,8 @@ top-section-left{
 .top-section {
 
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .top-section-right div{
@@ -220,9 +222,9 @@ top-section-left{
 	margin: 3px 0;
 	border-radius: 3px;
 }
-  .primary-nav.open{ opacity: 1;}
-  .primary-nav{
-    opacity: 0;
+  .primary-nav.open{ display: flex;}
+  .primary-nav {
+    display: none;
     gap:2rem;
   }
   .nav-wrap{

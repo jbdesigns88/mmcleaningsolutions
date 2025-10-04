@@ -1,12 +1,51 @@
 const Services = {
     deep_cleaning: {
-        title: "Basic Cleaning",
-        description: "Perfect for regular upkeep — dusting, vacuuming, mopping, and wiping down surfaces to keep your home or office fresh and tidy.",
+        title: "First Degree $99",
+        description:  `
+        •Vacuum/Map
+        •Wipe down all hard surfaces 
+        •clean all mirrors/dusting
+        •Bathrooms/Kitchen 
+        •Living area
+        •Dining area`,
         image: "./images/basic_cleaning.png"
     },
     commercial_cleaning: {
-        title: "Deep Cleaning",
-        description: "An intensive top-to-bottom clean targeting hidden dirt, grime, and buildup in hard-to-reach areas — ideal for seasonal refreshes, move-ins/outs, or post-renovation cleanups.",
+        title: "Second Degree $125",
+        description: `
+        •Vacuums/map
+        •wipe down all hard surfaces 
+        •clean all mirrors/dusting
+        •bathrooms/Kitchen 
+        •Living area 
+        •Dining area 
+        •1 Bedroom
+        `,
+        image: "./images/deep_cleaning.png"
+    },
+    third_degree: {
+        title: "Third Degree $125",
+        description: `
+        •Vacuum/Map
+        •Wipe down all hard surfaces 
+        •Clean all mirrors/Dusting
+        •Bathrooms/Kitchen 
+        •Living area
+        •Dining area 
+        •2 Bedrooms
+        `,
+        image: "./images/deep_cleaning.png"
+    },
+    fourth_degree: {
+        title: "Fourth Degree $200",
+        description: `
+        •Wipedown all hard surfaces 
+        •Clean all mirrors/Dusting
+        •Bathrooms/Kitchen 
+        •Living area 
+        •Dining area 
+        •3-4 Bedrooms
+        `,
         image: "./images/deep_cleaning.png"
     }
   

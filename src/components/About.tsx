@@ -1,3 +1,4 @@
+//changes made
 export default function AboutSection() {
   return (
     <section  className=" container bg-purple-50 py-16">

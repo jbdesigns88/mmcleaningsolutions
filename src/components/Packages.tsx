@@ -132,30 +132,27 @@ const Packages: React.FC = () => {
         </p>
 
         <div className="services-grid">
-          {Object.entries(Services).map(([key, service]) => {
-            const { name, price } = splitTitle(service.title);
+                {Object.entries(Services).map(([key, service]) => {
+                const { name, price } = splitTitle(service.title);
+                const isAddOns = key === "fifth_degree" || /add\s*on/i.test(name);
 
-            return (
-              <div key={key} className="service-card">
-                {service.image && (
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="service-image"
-                  />
-                )}
+                return (
+                    <div key={key} className="service-card">
+                    {service.image && (
+                        <img src={service.image} alt={service.title} className="service-image" />
+                    )}
 
-                <h3 className="service-title">
-                  <span className="service-name">{name}</span>
-                  {price !== null && (
-                    <span className="price-badge">${price}</span>
-                  )}
-                </h3>
+                    <h3 className="service-title">
+                        <span className={`service-name ${isAddOns ? "title-underline" : ""}`}>
+                        {name}
+                        </span>
+                        {price !== null && <span className="price-badge">${price}</span>}
+                    </h3>
 
-                {renderDescription(service.description)}
-              </div>
-            );
-          })}
+                    {renderDescription(service.description)}
+                    </div>
+                );
+                })}
         </div>
       </div>
     </section>

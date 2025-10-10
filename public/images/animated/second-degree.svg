@@ -1,0 +1,31 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg{fill:#E6D6FF}
+    .bottle{fill:#4B2D8F}
+    .nozzle{fill:#3B246F}
+    .droplet{fill:#2A2259;opacity:0;animation: drip 1.8s infinite ease-in-out}
+    .wipe{stroke:#3B246F;stroke-width:8;stroke-linecap:round;opacity:.2;animation: wipe 2.4s infinite ease-in-out}
+    @keyframes drip{
+      0%{transform: translate(0,-10px); opacity:0}
+      20%{opacity:.9}
+      60%{transform: translate(12px,18px); opacity:.9}
+      100%{transform: translate(24px,40px); opacity:0}
+    }
+    @keyframes wipe{
+      0%{transform: translateX(-40px)}
+      50%{transform: translateX(40px)}
+      100%{transform: translateX(-40px)}
+    }
+    .g{transform-box: fill-box; transform-origin: 50% 50%}
+  </style>
+  <rect class="bg" x="0" y="0" width="320" height="200" rx="16"/>
+  <g transform="translate(70,50)">
+    <rect class="bottle" x="0" y="24" width="60" height="90" rx="10"/>
+    <rect class="nozzle" x="45" y="10" width="28" height="16" rx="4"/>
+    <circle class="droplet g" cx="78" cy="30" r="4"/>
+    <circle class="droplet g" cx="78" cy="30" r="4" style="animation-delay:.4s"/>
+    <circle class="droplet g" cx="78" cy="30" r="4" style="animation-delay:.8s"/>
+  </g>
+  <line class="wipe g" x1="160" y1="120" x2="260" y2="120"/>
+  <line class="wipe g" x1="160" y1="140" x2="260" y2="140" style="animation-delay:.25s"/>
+</svg>

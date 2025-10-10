@@ -80,7 +80,7 @@ export default function App() {
       {/* ===== FOOTER (logo + details) ===== */}
       <footer className="w-full bg-[#3B246F] text-white">
         <section className="container">
-          <Logo/>
+          <Logo useWhite={true} />
           {/* Right: CTA + details */}
           <div className=" container content-details">
          

@@ -1,0 +1,41 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg{fill:#E6D6FF}
+    .line{stroke:#3B246F;stroke-width:3;stroke-linecap:round;opacity:.25}
+    .head{fill:#3B246F}
+    .tube{stroke:#3B246F;stroke-width:4;fill:none}
+    .sparkle{fill:#4B2D8F;opacity:.0;animation: twinkle 2s infinite ease-in-out}
+    .move{animation: sweep 2.2s infinite ease-in-out}
+    @keyframes sweep{
+      0%{transform: translateX(0)}
+      50%{transform: translateX(140px)}
+      100%{transform: translateX(0)}
+    }
+    @keyframes twinkle{
+      0%,100%{opacity:0}
+      20%{opacity:.9}
+      40%{opacity:0}
+    }
+    .g{transform-box: fill-box; transform-origin: 50% 50%}
+  </style>
+  <rect class="bg" x="0" y="0" width="320" height="200" rx="16"/>
+  <!-- floor lines -->
+  <line class="line" x1="16" y1="150" x2="304" y2="150"/>
+  <line class="line" x1="16" y1="164" x2="304" y2="164"/>
+  <line class="line" x1="16" y1="178" x2="304" y2="178"/>
+  <!-- vacuum group -->
+  <g class="move g" transform="translate(24,0)">
+    <rect class="head" x="40" y="128" width="64" height="16" rx="6"/>
+    <path class="tube" d="M72,128 C72,98 120,96 138,76" />
+    <circle fill="#3B246F" cx="140" cy="74" r="6"/>
+  </g>
+  <!-- sparkles -->
+  <g>
+    <polygon class="sparkle" points="30,120 34,130 44,134 34,138 30,148 26,138 16,134 26,130">
+      <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon class="sparkle" points="270,110 273,118 281,121 273,124 270,132 267,124 259,121 267,118">
+      <animate attributeName="opacity" values="0;1;0" dur="2.2s" begin=".4s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+</svg>

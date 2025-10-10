@@ -6,16 +6,16 @@ type LogoProps = {
   useWhite?: boolean;      // use white version (e.g., footer/dark bg)
 };
 
-const TextLogo = () => {
-  return (
-    <>
-      <a href="#" className="logo" aria-label="M&M Sanitation Home">
-        <span>M&amp;M</span>
-        <span>SANITATION SOLUTIONS</span>
-      </a>
-    </>
-  );
-};
+// const TextLogo = () => {
+//   return (
+//     <>
+//       <a href="#" className="logo" aria-label="M&M Sanitation Home">
+//         <span>M&amp;M</span>
+//         <span>SANITATION SOLUTIONS</span>
+//       </a>
+//     </>
+//   );
+// };
 
 const ImageLogo: React.FC = () => {
   // Default: color logo, but swap to white on mobile (<=700px)
